@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <!-------------------------------------
 https://www.youtube.com/watch?v=0YFrGy_mzjY
-minuto 17:04
+minuto 42:00
 --------------------------->
 </head>
 <body>
@@ -38,23 +38,69 @@ minuto 17:04
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>My name is Richard Garcia and I am a Data Analyst. I have a Bachelor's degree in Computer Science and I have been working in the field for over 2 years. I have experience in Python, R, and SQL. I am also familiar with Tableau and Power BI. I am currently looking for new opportunities to grow my career.</p>
+                <p>My name is Richard Garcia and I am a Data Analyst. I have a Bachelor's degree in Software Engineering and I have been working in the field for over 2 years including data analysis, forecasting and software development.
+                    I am currently looking for new opportunities to grow my career.</p>
                 <div class = "tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-            <div class="tav-contents">
-                <ul>
-                    <li><span>Data</span><br>Analyst</li>
-                    <li><span>Data</span><br>Analyst</li>
-                    <li><span>Data</span><br>Analyst</li>
-                </ul>
-            </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <div class = "tab-content-container">
+                            <h3>Hard Skills</h3>
+                            <li><span>Power BI</span><br>Reports Development</li>
+                            <li><span>Excel</span><br>Data Visualization</li>
+                            <li><span>SQL</span><br>Data Analytics</li>
+                            <li><span>Python</span><br>Forecasting</li>
+                            <li><span>Coding</span><br>Automation Duties</li>
+                        </div>
+                        <div class = "tab-content-container1">
+                            <h3>Soft Skills</h3>
+                            <li><span>Colaboration</span><br></li>
+                            <li><span>Teamwork</span><br></li>
+                            <li><span>Adaptability</span><br></li>
+                            <li><span>Organization</span><br></li>
+                            <li><span>Problem Solving</span><br></li>
+                            <li><span>Critical Thinking</span><br></li>
+                            <li><span>Interpersonal</span><br></li>
+                            <li><span>Intrapersonal</span><br></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Power BI</span><br>Reports Development</li>
+                        <li><span>Excel</span><br>Data Visualization</li>
+                        <li><span>SQL</span><br>Data Analytics</li>
+                        <li><span>Python</span><br>Forecasting</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Power BI</span><br>Reports Development</li>
+                        <li><span>Excel</span><br>Data Visualization</li>
+                        <li><span>SQL</span><br>Data Analytics</li>
+                        <li><span>Python</span><br>Forecasting</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');    
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
 </body>
 </html>
