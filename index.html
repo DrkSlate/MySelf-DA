@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<!-------------------------------------
-https://www.youtube.com/watch?v=0YFrGy_mzjY
-minuto 42:00
---------------------------->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7364bae30.js" crossorigin="anonymous"></script>
+    <!-------------------------------------
+    https://www.youtube.com/watch?v=0YFrGy_mzjY
+    minuto 42:00
+    --------------------------->
 </head>
 <body>
     <div id="header">
@@ -30,64 +31,90 @@ minuto 42:00
         </div>
     </div>
 <!-------------------------------------ABOUT ME-------------------->    
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png" alt="user">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>My name is Richard Garcia and I am a Data Analyst. I have a Bachelor's degree in Software Engineering and I have been working in the field for over 2 years including data analysis, forecasting and software development.
-                    I am currently looking for new opportunities to grow my career.</p>
-                <div class = "tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <div class = "tab-content-container">
-                            <h3>Hard Skills</h3>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Richard Garcia and I am a Data Analyst. I have a Bachelor's degree in Software Engineering and I have been working in the field for over 2 years including data analysis, forecasting and software development.
+                        I am currently looking for new opportunities to grow my career.</p>
+                    <div class = "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <div class = "tab-content-container">
+                                <h3>Hard Skills</h3>
+                                <li><span>Power BI</span><br>Reports Development</li>
+                                <li><span>Excel</span><br>Data Visualization</li>
+                                <li><span>SQL</span><br>Data Analytics</li>
+                                <li><span>Python</span><br>Forecasting</li>
+                                <li><span>Coding</span><br>Automation Duties</li>
+                            </div>
+                            <div class = "tab-content-container1">
+                                <h3>Soft Skills</h3>
+                                <li><span>Colaboration</span><br></li>
+                                <li><span>Teamwork</span><br></li>
+                                <li><span>Adaptability</span><br></li>
+                                <li><span>Organization</span><br></li>
+                                <li><span>Problem Solving</span><br></li>
+                                <li><span>Critical Thinking</span><br></li>
+                                <li><span>Interpersonal</span><br></li>
+                                <li><span>Intrapersonal</span><br></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
                             <li><span>Power BI</span><br>Reports Development</li>
                             <li><span>Excel</span><br>Data Visualization</li>
                             <li><span>SQL</span><br>Data Analytics</li>
                             <li><span>Python</span><br>Forecasting</li>
-                            <li><span>Coding</span><br>Automation Duties</li>
-                        </div>
-                        <div class = "tab-content-container1">
-                            <h3>Soft Skills</h3>
-                            <li><span>Colaboration</span><br></li>
-                            <li><span>Teamwork</span><br></li>
-                            <li><span>Adaptability</span><br></li>
-                            <li><span>Organization</span><br></li>
-                            <li><span>Problem Solving</span><br></li>
-                            <li><span>Critical Thinking</span><br></li>
-                            <li><span>Interpersonal</span><br></li>
-                            <li><span>Intrapersonal</span><br></li>
-                        </div>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Power BI</span><br>Reports Development</li>
-                        <li><span>Excel</span><br>Data Visualization</li>
-                        <li><span>SQL</span><br>Data Analytics</li>
-                        <li><span>Python</span><br>Forecasting</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Power BI</span><br>Reports Development</li>
-                        <li><span>Excel</span><br>Data Visualization</li>
-                        <li><span>SQL</span><br>Data Analytics</li>
-                        <li><span>Python</span><br>Forecasting</li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Power BI</span><br>Reports Development</li>
+                            <li><span>Excel</span><br>Data Visualization</li>
+                            <li><span>SQL</span><br>Data Analytics</li>
+                            <li><span>Python</span><br>Forecasting</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<!-------------------------------------SERVICES-------------------->
+    <div id="services"></div>
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Using SQL, Excel and Python to analyze data and provide insights.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Forecasting</h2>
+                    <p>Using Python to forecast future trends and provide recommendations.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-table"></i>
+                    <h2>Reports Development</h2>
+                    <p>Using Power BI to create reports and dashboards for data visualization.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 <script>
     var tablinks = document.getElementsByClassName('tab-links');    
     var tabcontents = document.getElementsByClassName('tab-contents');
